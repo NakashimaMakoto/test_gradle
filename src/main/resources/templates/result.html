@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>結果</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>結果</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
-<body  style="text-align:center;">
-<h1>結果</h1>
-   <p th:text="'ID: ' + ${loginForm.id}" />
-   <p th:text="'PASSWORD: ' + ${loginForm.password}" />
-   <p th:text="'RESULT: ' + ${result}" />
-   <a href="/">TOPに戻る</a>
+<body style="text-align: center;">
+	<h1>結果</h1>
+	<p th:text="'ID: ' + ${loginForm.id}" />
+	<p th:text="'PASSWORD: ' + ${loginForm.password}" />
+	<p th:text="'RESULT: ' + ${result}" />
+	<a href="/">TOPに戻る</a>
 </body>
 </html>
