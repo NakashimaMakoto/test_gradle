@@ -1,19 +1,30 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>ログイン</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ログイン</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
-<body style="text-align:center;">
-<h1>ログイン</h1>
-<form action="#" th:action="@{/result}" th:object="${loginForm}" method="post">
-    <p>ID<br>
-      <input type="text" th:field="*{id}" />
-    </p>
-    <p>PASSWORD<br>
-      <input type="text" th:field="*{password}" />
-    </p>
-    <p><input type="submit" value="送信" /> <input type="reset" value="リセット" /></p>
-</form>
+<body style="text-align: center;">
+	<h1>ログイン</h1>
+	<form action="#" th:action="@{/result}" th:object="${loginForm}"
+		method="post">
+		<p>
+			ID<br> <input type="text" th:field="*{id}" />
+		</p>
+		<p>
+			PASSWORD<br> <input type="text" th:field="*{password}" />
+		</p>
+		<br>
+		<h3>掛け算</h3>
+		<p>
+			数字１ <input type="text" th:field="*{a}" />
+		</p>
+		<p>
+			数字２ <input type="text" th:field="*{b}" />
+		</p>
+		<p>
+			<input type="submit" value="送信" /> <input type="reset" value="リセット" />
+		</p>
+	</form>
 </body>
 </html>
