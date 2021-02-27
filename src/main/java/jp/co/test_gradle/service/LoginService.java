@@ -1,4 +1,4 @@
-package jp.co.test_gradle;
+package jp.co.test_gradle.service;
 
 import org.springframework.stereotype.Service;
 
